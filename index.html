@@ -189,6 +189,22 @@
             color: #1e293b;
             margin-bottom: 20px;
         }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+
+        .footer span {
+            font-weight: 600;
+            background: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
     </style>
 </head>
 <body>
@@ -204,9 +220,9 @@
                 <div class="input-group">
                     <div class="input-header">
                         <span class="input-label">Loan Amount</span>
-                        <span class="input-value value-primary" id="loanAmountDisplay">₹30,00,000</span>
+                        <span class="input-value value-primary" id="loanAmountDisplay">₹10,00,000</span>
                     </div>
-                    <input type="range" id="loanAmount" min="100000" max="10000000" step="100000" value="3000000">
+                    <input type="range" id="loanAmount" min="100000" max="10000000" step="100000" value="1000000">
                     <div class="range-labels">
                         <span>₹1L</span>
                         <span>₹1Cr</span>
@@ -228,9 +244,9 @@
                 <div class="input-group">
                     <div class="input-header">
                         <span class="input-label">Loan Tenure (Years)</span>
-                        <span class="input-value value-tertiary" id="loanTenureDisplay">15 Yr</span>
+                        <span class="input-value value-tertiary" id="loanTenureDisplay">5 Yr</span>
                     </div>
-                    <input type="range" id="loanTenure" min="1" max="30" step="1" value="15">
+                    <input type="range" id="loanTenure" min="1" max="30" step="1" value="5">
                     <div class="range-labels">
                         <span>1 Yr</span>
                         <span>30 Yr</span>
@@ -239,21 +255,21 @@
 
                 <div class="emi-card">
                     <div class="emi-label">Monthly EMI</div>
-                    <div class="emi-amount" id="emiAmount">₹30,428</div>
+                    <div class="emi-amount" id="emiAmount">₹20,758</div>
                 </div>
 
                 <div class="breakdown">
                     <div class="breakdown-item">
                         <div class="breakdown-label">Principal</div>
-                        <div class="breakdown-value" id="principalAmount">₹30,00,000</div>
+                        <div class="breakdown-value" id="principalAmount">₹10,00,000</div>
                     </div>
                     <div class="breakdown-item">
                         <div class="breakdown-label">Interest</div>
-                        <div class="breakdown-value" id="interestAmount">₹24,77,040</div>
+                        <div class="breakdown-value" id="interestAmount">₹2,45,484</div>
                     </div>
                     <div class="breakdown-item">
                         <div class="breakdown-label">Total</div>
-                        <div class="breakdown-value" id="totalAmount">₹54,77,040</div>
+                        <div class="breakdown-value" id="totalAmount">₹12,45,484</div>
                     </div>
                 </div>
             </div>
@@ -274,6 +290,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="footer">
+            Made by <span>SAGAR</span>
         </div>
     </div>
 
